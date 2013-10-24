@@ -21,6 +21,12 @@
 		D3EAE1451818B07F005AC38F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EAE1271818B07F005AC38F /* UIKit.framework */; };
 		D3EAE14D1818B07F005AC38F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE14B1818B07F005AC38F /* InfoPlist.strings */; };
 		D3EAE14F1818B07F005AC38F /* VoovilSplashScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EAE14E1818B07F005AC38F /* VoovilSplashScreenTests.m */; };
+		D3EAE1641818B153005AC38F /* bg-default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE15B1818B153005AC38F /* bg-default.png */; };
+		D3EAE1651818B153005AC38F /* bg-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE15C1818B153005AC38F /* bg-default@2x.png */; };
+		D3EAE1681818B153005AC38F /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE1601818B153005AC38F /* list.png */; };
+		D3EAE1691818B153005AC38F /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE1611818B153005AC38F /* list@2x.png */; };
+		D3EAE16C1818B29E005AC38F /* MoveButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16A1818B29E005AC38F /* MoveButton.png */; };
+		D3EAE16D1818B29E005AC38F /* MoveButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		D3EAE14A1818B07F005AC38F /* VoovilSplashScreenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoovilSplashScreenTests-Info.plist"; sourceTree = "<group>"; };
 		D3EAE14C1818B07F005AC38F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3EAE14E1818B07F005AC38F /* VoovilSplashScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoovilSplashScreenTests.m; sourceTree = "<group>"; };
+		D3EAE15B1818B153005AC38F /* bg-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-default.png"; sourceTree = "<group>"; };
+		D3EAE15C1818B153005AC38F /* bg-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-default@2x.png"; sourceTree = "<group>"; };
+		D3EAE1601818B153005AC38F /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		D3EAE1611818B153005AC38F /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		D3EAE16A1818B29E005AC38F /* MoveButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoveButton.png; sourceTree = "<group>"; };
+		D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoveButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 				D3EAE1351818B07F005AC38F /* Main.storyboard */,
 				D3EAE1381818B07F005AC38F /* ViewController.h */,
 				D3EAE1391818B07F005AC38F /* ViewController.m */,
+				D3EAE1581818B153005AC38F /* images */,
 				D3EAE13B1818B07F005AC38F /* Images.xcassets */,
 				D3EAE12A1818B07F005AC38F /* Supporting Files */,
 			);
@@ -150,6 +163,27 @@
 				D3EAE14B1818B07F005AC38F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3EAE1581818B153005AC38F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D3EAE16A1818B29E005AC38F /* MoveButton.png */,
+				D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */,
+				D3EAE15B1818B153005AC38F /* bg-default.png */,
+				D3EAE15C1818B153005AC38F /* bg-default@2x.png */,
+				D3EAE15F1818B153005AC38F /* Icons */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		D3EAE15F1818B153005AC38F /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D3EAE1601818B153005AC38F /* list.png */,
+				D3EAE1611818B153005AC38F /* list@2x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +262,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EAE1681818B153005AC38F /* list.png in Resources */,
 				D3EAE13C1818B07F005AC38F /* Images.xcassets in Resources */,
+				D3EAE1641818B153005AC38F /* bg-default.png in Resources */,
+				D3EAE16D1818B29E005AC38F /* MoveButton@2x.png in Resources */,
 				D3EAE12E1818B07F005AC38F /* InfoPlist.strings in Resources */,
+				D3EAE16C1818B29E005AC38F /* MoveButton.png in Resources */,
+				D3EAE1651818B153005AC38F /* bg-default@2x.png in Resources */,
+				D3EAE1691818B153005AC38F /* list@2x.png in Resources */,
 				D3EAE1371818B07F005AC38F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +500,7 @@
 				D3EAE1541818B07F005AC38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3EAE1551818B07F005AC38F /* Build configuration list for PBXNativeTarget "VoovilSplashScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +509,7 @@
 				D3EAE1571818B07F005AC38F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
