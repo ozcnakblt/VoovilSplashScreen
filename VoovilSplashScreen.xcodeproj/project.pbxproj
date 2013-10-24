@@ -27,6 +27,8 @@
 		D3EAE1691818B153005AC38F /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE1611818B153005AC38F /* list@2x.png */; };
 		D3EAE16C1818B29E005AC38F /* MoveButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16A1818B29E005AC38F /* MoveButton.png */; };
 		D3EAE16D1818B29E005AC38F /* MoveButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */; };
+		D3EAE1701818B47E005AC38F /* launch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16E1818B47E005AC38F /* launch-logo.png */; };
+		D3EAE1711818B47E005AC38F /* launch-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16F1818B47E005AC38F /* launch-logo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		D3EAE1611818B153005AC38F /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
 		D3EAE16A1818B29E005AC38F /* MoveButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoveButton.png; sourceTree = "<group>"; };
 		D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoveButton@2x.png"; sourceTree = "<group>"; };
+		D3EAE16E1818B47E005AC38F /* launch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-logo.png"; sourceTree = "<group>"; };
+		D3EAE16F1818B47E005AC38F /* launch-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-logo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			children = (
 				D3EAE16A1818B29E005AC38F /* MoveButton.png */,
 				D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */,
+				D3EAE16E1818B47E005AC38F /* launch-logo.png */,
+				D3EAE16F1818B47E005AC38F /* launch-logo@2x.png */,
 				D3EAE15B1818B153005AC38F /* bg-default.png */,
 				D3EAE15C1818B153005AC38F /* bg-default@2x.png */,
 				D3EAE15F1818B153005AC38F /* Icons */,
@@ -196,6 +202,7 @@
 				D3EAE11C1818B07F005AC38F /* Sources */,
 				D3EAE11D1818B07F005AC38F /* Frameworks */,
 				D3EAE11E1818B07F005AC38F /* Resources */,
+				D3EAE1721818BAFE005AC38F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -262,7 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3EAE1711818B47E005AC38F /* launch-logo@2x.png in Resources */,
 				D3EAE1681818B153005AC38F /* list.png in Resources */,
+				D3EAE1701818B47E005AC38F /* launch-logo.png in Resources */,
 				D3EAE13C1818B07F005AC38F /* Images.xcassets in Resources */,
 				D3EAE1641818B153005AC38F /* bg-default.png in Resources */,
 				D3EAE16D1818B29E005AC38F /* MoveButton@2x.png in Resources */,
@@ -283,6 +292,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3EAE1721818BAFE005AC38F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((bN += 1))\nbN=$(printf \"%d\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3EAE11C1818B07F005AC38F /* Sources */ = {

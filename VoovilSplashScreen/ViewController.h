@@ -10,4 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIView *launchLogo;
+@property (nonatomic, strong) IBOutlet UIView *launchFade;
+-(IBAction)fadeButton;
+
 @end
