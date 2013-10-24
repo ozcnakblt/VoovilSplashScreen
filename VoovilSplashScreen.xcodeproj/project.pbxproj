@@ -23,8 +23,6 @@
 		D3EAE14F1818B07F005AC38F /* VoovilSplashScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EAE14E1818B07F005AC38F /* VoovilSplashScreenTests.m */; };
 		D3EAE1641818B153005AC38F /* bg-default.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE15B1818B153005AC38F /* bg-default.png */; };
 		D3EAE1651818B153005AC38F /* bg-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE15C1818B153005AC38F /* bg-default@2x.png */; };
-		D3EAE1681818B153005AC38F /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE1601818B153005AC38F /* list.png */; };
-		D3EAE1691818B153005AC38F /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE1611818B153005AC38F /* list@2x.png */; };
 		D3EAE16C1818B29E005AC38F /* MoveButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16A1818B29E005AC38F /* MoveButton.png */; };
 		D3EAE16D1818B29E005AC38F /* MoveButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */; };
 		D3EAE1701818B47E005AC38F /* launch-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D3EAE16E1818B47E005AC38F /* launch-logo.png */; };
@@ -63,8 +61,6 @@
 		D3EAE14E1818B07F005AC38F /* VoovilSplashScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoovilSplashScreenTests.m; sourceTree = "<group>"; };
 		D3EAE15B1818B153005AC38F /* bg-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-default.png"; sourceTree = "<group>"; };
 		D3EAE15C1818B153005AC38F /* bg-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-default@2x.png"; sourceTree = "<group>"; };
-		D3EAE1601818B153005AC38F /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
-		D3EAE1611818B153005AC38F /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
 		D3EAE16A1818B29E005AC38F /* MoveButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MoveButton.png; sourceTree = "<group>"; };
 		D3EAE16B1818B29E005AC38F /* MoveButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MoveButton@2x.png"; sourceTree = "<group>"; };
 		D3EAE16E1818B47E005AC38F /* launch-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launch-logo.png"; sourceTree = "<group>"; };
@@ -178,18 +174,8 @@
 				D3EAE16F1818B47E005AC38F /* launch-logo@2x.png */,
 				D3EAE15B1818B153005AC38F /* bg-default.png */,
 				D3EAE15C1818B153005AC38F /* bg-default@2x.png */,
-				D3EAE15F1818B153005AC38F /* Icons */,
 			);
 			path = images;
-			sourceTree = "<group>";
-		};
-		D3EAE15F1818B153005AC38F /* Icons */ = {
-			isa = PBXGroup;
-			children = (
-				D3EAE1601818B153005AC38F /* list.png */,
-				D3EAE1611818B153005AC38F /* list@2x.png */,
-			);
-			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +256,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3EAE1711818B47E005AC38F /* launch-logo@2x.png in Resources */,
-				D3EAE1681818B153005AC38F /* list.png in Resources */,
 				D3EAE1701818B47E005AC38F /* launch-logo.png in Resources */,
 				D3EAE13C1818B07F005AC38F /* Images.xcassets in Resources */,
 				D3EAE1641818B153005AC38F /* bg-default.png in Resources */,
@@ -278,7 +263,6 @@
 				D3EAE12E1818B07F005AC38F /* InfoPlist.strings in Resources */,
 				D3EAE16C1818B29E005AC38F /* MoveButton.png in Resources */,
 				D3EAE1651818B153005AC38F /* bg-default@2x.png in Resources */,
-				D3EAE1691818B153005AC38F /* list@2x.png in Resources */,
 				D3EAE1371818B07F005AC38F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
